@@ -1,23 +1,36 @@
 package com.example.t2009m1demo.entity;
 
 public class Account {
+    private int id;
     private String username;
     private String password;
     private String fullname;
     private String email;
     private String phone;
     private String birthday;
+    private int status;
+
 
     public Account() {
     }
 
-    public Account(String username, String password, String fullname, String email, String phone, String birthday) {
+    public Account(int id, String username, String password, String fullname, String email, String phone, String birthday, int status) {
+        this.id = id;
         this.username = username;
         this.password = password;
         this.fullname = fullname;
         this.email = email;
         this.phone = phone;
         this.birthday = birthday;
+        this.status = status;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -66,5 +79,13 @@ public class Account {
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }
