@@ -21,8 +21,8 @@ public class MySqlAccountModel implements AccountModel {
 
     @Override
     public boolean save(Account account) {
+        Connection connection = ConnectionHelper.getConnection();
         try {
-                Connection connection = ConnectionHelper.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(INSERT_ACCOUNT);
                 preparedStatement.setString(1,account.getUsername());
                 preparedStatement.setString(2,account.getPassword());

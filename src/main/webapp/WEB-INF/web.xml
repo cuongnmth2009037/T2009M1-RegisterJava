@@ -10,6 +10,14 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServelet</servlet-name>
-        <url-pattern>/register</url-pattern>
+        <url-pattern>/user/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateServlet</servlet-name>
+        <servlet-class>com.example.t2009m1demo.controllers.CreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateServlet</servlet-name>
+        <url-pattern>/user/create</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -5,6 +5,7 @@
     <title>Registration Form - 30DaysOfCSS3</title>
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         body{
             text-align:center;
@@ -134,13 +135,20 @@
             <div class="register-block">
                 <h3 class="register-title">Create an account</h3>
                 <p>Create an account using the form below.</p>
-                <form action="/user/register" method="post">
+                <form action="/user/create" method="post">
                     <input type="text" name="username" placeholder="Enter your Username"/>
                     <input type="password" name="password" placeholder="Enter your Password"/>
                     <input type="text" name="fullname" placeholder="Enter your Fullname"/>
                     <input type="text" name="email" placeholder="Enter your Email"/>
                     <input type="text" name="phone" placeholder="Enter your Phone"/>
                     <input type="date" name="birthday" placeholder="Enter your Birthday"/>
+                    <div class="form-group col-md-4">
+                        <select id="inputState" class="form-control" name="status">
+                            <option>Select status</option>
+                            <option value="1">Active</option>
+                            <option value="-1">Deactive</option>
+                        </select>
+                    </div>
                     <input type="submit" value="Create my account"/>
                 </form>
             </div>

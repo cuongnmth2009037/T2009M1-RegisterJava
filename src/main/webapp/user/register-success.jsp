@@ -1,5 +1,6 @@
-<%@ page import="com.example.t2009m1demo.entity.Account" %><%
-    Account account =(Account) request.getAttribute("account");
+<%@ page import="com.example.t2009m1demo.entity.Account" %>
+<%@ page import="com.example.t2009m1demo.entity.User" %><%
+    User user =(User) request.getAttribute("user");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +18,12 @@
     <div class="alert alert-success">
         <strong>Register Success!</strong>
     </div>
-    <div><b>Username:</b> <%= account.getUsername()%></div>
-    <div><b>Password:</b> <%= account.getPassword()%></div>
-    <div><b>Fullname:</b> <%= account.getFullname()%></div>
-    <div><b>Email:</b> <%= account.getEmail()%></div>
-    <div><b>Phone:</b> <%= account.getPhone()%></div>
-    <div><b>Birthday:</b> <%= account.getBirthday()%></div>
+    <div><b>Username:</b> <%= user.getUsername()%></div>
+    <div><b>Password:</b> <%= user.getPassword()%></div>
+    <div><b>Fullname:</b> <%= user.getFullname()%></div>
+    <div><b>Email:</b> <%= user.getEmail()%></div>
+    <div><b>Phone:</b> <%= user.getPhone()%></div>
+    <div><b>Birthday:</b> <%= user.getBirthday()%></div>
 
 </div>
 </body>
